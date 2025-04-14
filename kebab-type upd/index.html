@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>KebabType - тренажер для печати</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="img-wrapper">
+                <img class="logo" src="./icons/kebabIcon.svg" alt="KebabType Icon" width="60px" height="60px">
+            </div>
+            
+            <h1>KebabType</h1>
+        </header>
+
+        <div class="info">
+            <button class="generate-btn">Сгенерировать новый текст</button>
+            <div class="changes">
+                <div class="change-div">
+                    <div class="change-title">Язык текста:</div>
+                    <div class="change-radios">
+                        <div>
+                            <input class="radio-input" type="radio" id="russian" name="language" value="russian"/>
+                            <label for="russian">Русский</label>
+                        </div>
+                        
+                        <div>
+                            <input class="radio-input" type="radio" id="english" name="language" value="english" checked/>
+                            <label for="english">Английский</label>
+                        </div>
+                        
+                        <div>
+                            <input class="radio-input" type="radio" id="russian-english" name="language" value="russian-english"/>
+                            <label for="russian-english">Русский и английский</label>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="change-div">
+                    <div class="change-title">Объём текста:</div>
+                    <div class="change-radios">
+                        <div>
+                            <input class="radio-input" type="radio" id="words-20" name="volume" value="words-20"/>
+                            <label for="words-20">20 слов</label>
+                        </div>
+
+                        <div>
+                            <input class="radio-input" type="radio" id="words-40" name="volume" value="words-40" checked/>
+                            <label for="words-40">40 слов</label>
+                        </div>
+                        
+                        <div>
+                            <input class="radio-input" type="radio" id="words-60" name="volume" value="words-60"/>
+                            <label for="words-60">60 слов</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="simulator" tabindex="0">
+            <div class="text"></div>
+            <div class="cursor"></div>
+            <div class="focus-error">Нажмите чтобы начать</div>
+        </div>
+
+        <div class="mistakes">
+            Ваши ошибки: <span class="mistakes-counter">0</span>/<span class="amount-words"></span> (допустимое количество)
+        </div> 
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="author">
+                Artur Melkumian
+            </div>
+            <ul class="socials">
+                <li class="telegram">
+                    <a href="https://t.me/eebuddyy">
+                        <img class="social-img" src="./icons/telegramIcon.svg" alt="telegram" height="40px" width="40px">
+                    </a>
+                </li>
+                <li class="vkontakte">
+                    <a href="https://vk.com/severnyiamigo">
+                        <img class="social-img" src="./icons/vkIcon.svg" alt="vkontakte" height="40px" width="40px">
+                    </a>
+                </li>
+                <li class="github">
+                    <a href="https://github.com/north-amigo">
+                        <img class="social-img" src="./icons/gitHubIcon.svg" alt="github" height="40px" width="40px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
