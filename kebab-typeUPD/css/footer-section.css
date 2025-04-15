@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    height: 170px;
+    background-color: #000000;
+
+    color: #fff;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.author {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.socials li {
+    transition: all 0.3s ease;
+}
+
+.socials li:hover {
+    opacity: 0.5;
+}

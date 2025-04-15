@@ -1,0 +1,29 @@
+@import "./reset.css";
+@import "./header-section.css";
+@import "./info-section.css";
+@import "./simulator-section.css";
+@import "./mistakes-section.css";
+@import "./footer-section.css";
+
+
+body {
+    background-image: url(../icons/mainbg.svg);
+}
+
+main {
+    height: 650px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

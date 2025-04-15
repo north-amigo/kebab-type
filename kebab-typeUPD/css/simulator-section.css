@@ -1,0 +1,68 @@
+.simulator {
+    position: relative;
+
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.focus-error {
+    display: none;
+    
+    cursor: pointer;
+    
+    position: absolute;
+    inset: 0;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    color: rgb(110, 110, 110);
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+
+    margin: 40px auto;
+    filter: blur(3px);
+}
+
+.simulator:focus .text{
+    filter: blur(0);
+    cursor: default;
+}
+
+.simulator:focus .focus-error{
+    opacity: 0;
+    cursor: default;
+}
+
+.simulator:focus .cursor{
+    display: block;
+}
+
+.letter.current {
+    animation: blink 0.65s infinite;
+    background-color: rgb(207, 207, 207);
+}
+
+.letter.correct  {
+    color: #000000;
+}
+
+.letter.incorrect {
+    color: #f55;
+}
+
+.letter.spaceIncorrect {
+    background-color: rgb(255, 169, 169) ;
+}

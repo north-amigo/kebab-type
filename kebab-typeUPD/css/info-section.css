@@ -1,0 +1,71 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width:  750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.changes {
+    display: flex;
+    gap: 40px;  
+}
+
+.change-div {
+    background-color: rgb(173, 173, 173);
+    padding: 7px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 375px;
+}
+
+.change-title {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.change-radios {
+    display: flex;
+    flex-direction: column;
+}
+
+.change-radios label {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    transition: all 0.12s ease-in;
+}
+
+.change-radios label:hover {
+    font-weight: 300;
+}
+
+.change-radios div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.radio-input {
+    width: 15px;
+    height: 15px;
+}
+
+button {
+    background-color: rgb(173, 173, 173);
+    padding: 7px 7px 7px 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: all 0.12s ease-in;
+}
+
+button:hover {
+    background-color: rgb(134, 134, 134)
+}
