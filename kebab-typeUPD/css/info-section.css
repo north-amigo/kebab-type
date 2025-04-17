@@ -1,7 +1,7 @@
 .info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 
     max-width:  750px;
     margin: 0 auto;
@@ -60,7 +60,7 @@ button {
     background-color: rgb(173, 173, 173);
     padding: 7px 7px 7px 10px;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 10px;
     font-size: 25px;
     transition: all 0.12s ease-in;
@@ -68,4 +68,30 @@ button {
 
 button:hover {
     background-color: rgb(134, 134, 134)
+}
+
+
+.capslock-status {
+    background-color: rgb(217, 255, 202);
+    width: 500px;
+    height: 50px;
+
+    border-radius: 23px;
+
+    margin: 0 auto;
+}
+
+.status-div-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 21px;
+
+    margin-top: 11px;
+}
+
+.caps-status {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 4px;
 }

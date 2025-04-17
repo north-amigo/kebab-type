@@ -8,10 +8,14 @@
 
 body {
     background-image: url(../icons/mainbg.svg);
+    display: flex;
+    min-height: 100vh; 
+    flex-direction: column;
 }
 
 main {
-    height: 650px;
+    flex-grow: 1;
+    min-height: 770px;
 }
 
 @keyframes blink {

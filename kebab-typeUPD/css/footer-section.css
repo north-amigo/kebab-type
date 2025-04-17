@@ -3,10 +3,12 @@ footer {
     flex-direction: column;
     gap: 15px;
 
-    height: 170px;
+    height: 155px;
     background-color: #000000;
 
     color: #fff;
+
+
 }
 
 .wrapper {
@@ -18,7 +20,7 @@ footer {
     letter-spacing: 1.5px;
     font-size: 30px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .socials {
